@@ -1,0 +1,167 @@
+body{
+     background-image: url(cover.jpg);
+     background-image: fixed;
+     background-image: center;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+}
+
+.box{
+    background-color: rgba(0, 0, 0, 0.164);
+    backdrop-filter: blur(2px);
+    color: white;
+        text-align: center;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 15px;
+        border-radius: 15px;
+        width: 20%;
+        box-shadow: 0 0 20px rgba(0,0,0,0.9);
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+#submit{
+
+    background-color: rgba(0, 0, 0, 0.164);
+    backdrop-filter: blur(2px);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-color: rgba(0, 0, 0, 0.801);
+    backdrop-filter: blur(2px);
+}
+
+.error{
+    margin-left: 42px;
+    background-color: rgba(0, 0, 0, 0.726);
+    backdrop-filter: blur(6px);
+    color: rgb(255, 0, 0);
+    font-size: 20px;
+    width: 24%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.9);
+}
+
+/*----------------formulario-----------------*/
+
+.container{
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.726);
+    backdrop-filter: blur(6px);
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    padding: 15px;
+}
+
+table {
+    width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+th {
+	text-align: center;
+}
+
+
+th {
+		background-color: #55608f;
+}
+
+
+
+tr :hover{
+
+    background-color: rgba(255,255,255,0.3);
+
+}
+td :hover{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -9999px;
+        bottom: -9999px;
+        background-color: rgba(255,255,255,0.2);
+        z-index: -1;
+}
+
+
+/*---------------- lista de enlaces -----------------*/
+
+#lista ul {
+    list-style-type: none;
+}
+
+#lista ul li {
+    font-family:Georgia,serif,Times;
+    font-size:18px;
+}
+
+#lista ul li a {
+    display: flex;
+    width:300px;
+    height:28px;
+    background-color: rgba(0, 0, 0, 0.726);
+    backdrop-filter: blur(1px);
+    padding-left:10px;
+    text-decoration:none;
+    color:#bfe1f1;
+}
+
+#lista ul li a:hover {
+    -moz-transform:rotate(-5deg);
+    -moz-box-shadow:10px 10px 20px #000000;
+    -webkit-transform:rotate(-5deg);
+    -webkit-box-shadow:10px 10px 20px #000000;
+    transform:rotate(4deg); box-shadow:10px 10px 20px #000000;
+}
+
